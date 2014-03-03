@@ -45,7 +45,7 @@ define( function ( require ) {
 
     if ( city && state && year ) {
       chartOptions.city = city;
-      chartOptions.state = state;
+      chartOptions.state = state.toUpperCase();
       chartOptions.year = year;
     } else {
       chartOptions = defaultChartOptions;
@@ -74,7 +74,7 @@ define( function ( require ) {
   $( '#submit' ).on(' click ', function ( e ) {
 
     var city         = $( '#city' ).val(),
-        state        = $( '#state' ).val(),
+        state        = $( '#state' ).val().toUpperCase(),
         year         = $( '#year' ).val(),
         chartOptions = {};
 

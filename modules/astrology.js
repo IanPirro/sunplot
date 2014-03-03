@@ -24,6 +24,9 @@ module.exports = function ( options, callback ) {
         
         if ( err ) { return callback( err ); }
 
+        if ( !body.split( '\n' ).slice(17, 48).length ) {
+            return false;
+        }
         // Declarations
         // ---------------------------------------------------------
         var lines       = body.split( '\n' ).slice(17, 48)
