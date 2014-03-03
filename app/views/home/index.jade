@@ -1,0 +1,24 @@
+extends ../layout
+
+block content
+
+    div.btn-group.center-block
+        button.month.btn.btn-default(type="button", data-date="all") All
+        button.month.btn.btn-default(type="button", data-date="2013-01-01") January
+        button.month.btn.btn-default(type="button", data-date="2013-02-01") February
+        button.month.btn.btn-default(type="button", data-date="2013-03-01") March
+        button.month.btn.btn-default(type="button", data-date="2013-04-01") April
+        button.month.btn.btn-default(type="button", data-date="2013-05-01") May
+        button.month.btn.btn-default(type="button", data-date="2013-06-01") June
+        button.month.btn.btn-default(type="button", data-date="2013-07-01") July
+        button.month.btn.btn-default(type="button", data-date="2013-08-01") August
+        button.month.btn.btn-default(type="button", data-date="2013-09-01") September
+        button.month.btn.btn-default(type="button", data-date="2013-10-01") October
+        button.month.btn.btn-default(type="button", data-date="2013-11-01") November
+        button.month.btn.btn-default(type="button", data-date="2013-12-01") December
+    div#chart
+
+
+block scripts
+    script(src="require/config.js")
+    script(src="components/requirejs/require.js", data-main="js/main")

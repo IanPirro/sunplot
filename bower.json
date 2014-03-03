@@ -1,0 +1,17 @@
+{
+  "name": "citysungraph",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.11",
+    "momentjs": "~2.5.1",
+    "jquery": "~2.1.0",
+    "tipsy": "~0.1.7",
+    "d3": "~3.4.3",
+    "bootstrap": "~3.1.1"
+  }
+}
