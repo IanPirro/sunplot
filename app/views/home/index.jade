@@ -2,6 +2,18 @@ extends ../layout
 
 block content
 
+    form.form-inline(role="form")
+        div.form-group
+            label.sr-only City
+            input.form-control#city(type="text", placeholder="City")
+        div.form-group
+            label.sr-only State 
+            input.form-control#state(type="text", placeholder="State ( ex. MA )")
+        div.form-group
+            label.sr-only Year
+            input.form-control#year(type="text", placeholder="Year")
+        button.btn.btn-primary.pull-right#submit(type="button") Submit
+
     div.btn-group.center-block
         button.month.btn.btn-default(type="button", data-date="all") All
         button.month.btn.btn-default(type="button", data-date="2013-01-01") January

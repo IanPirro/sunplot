@@ -39,16 +39,45 @@ body {
   padding-top: 20px;
 }
 #chart {
+  position: relative;
   width: 1000px;
   height: 750px;
-  margin: 60px auto;
+  margin: 30px auto 60px auto;
   background: #fff;
   -webkit-border-radius: 10px;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
   box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
 }
-.btn-group {
-  width: 1000px;
-  margin-left: 11%;
+#chart-title {
+  position: absolute;
+  left: 35px;
+  top: -5px;
+  color: #95a5a6;
+}
+svg {
+  margin-left: 15px;
+}
+.btn-group,
+.form-inline {
+  width: 900px;
+  height: 40px;
+  margin-left: 10%;
+}
+.form-inline {
+  margin-bottom: 15px;
+}
+.form-inline .form-group:nth-child(1) .form-control {
+  -webkit-border-radius: 5px 0px 0px 5px;
+  border-radius: 5px 0px 0px 5px;
+}
+.form-inline .form-group:nth-child(2) .form-control {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  border-left: none;
+  border-right: none;
+}
+.form-inline .form-group:nth-child(3) .form-control {
+  -webkit-border-radius: 0px 5px 5px 0px;
+  border-radius: 0px 5px 5px 0px;
 }

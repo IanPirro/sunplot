@@ -72,11 +72,11 @@ module.exports = function ( options, callback ) {
                 if ( lineData[ x ] && lineData[ j ] ) {
                     sunrises.push( { 
                         date: postData.form.xxy + '-' + ((day + '').length === 1 ? '0' + day : day) + '-' + ( (((x - 1) / 2) + 1 + '').length === 1 ? '0' + (((x - 1) / 2) + 1) : (((x - 1) / 2) + 1) ) + 'T00:00:00', 
-                        time: '2013-01-01T' + lineData[ x ].slice(0,2) + ':' + lineData[ x ].slice(2) + ':00'
+                        time: postData.form.xxy + '-01-01T' + lineData[ x ].slice(0,2) + ':' + lineData[ x ].slice(2) + ':00'
                     });
                     sunsets.push( { 
                         date: postData.form.xxy + '-' + ((day + '').length === 1 ? '0' + day : day) + '-' + (( ((x - 1) / 2) + 1 + '').length === 1 ? '0' + (((x - 1) / 2) + 1) : (((x - 1) / 2) + 1)) + 'T00:00:00', 
-                        time: '2013-01-01T' + lineData[ j ].slice(0,2) + ':' + lineData[ j ].slice(2) + ':00'
+                        time: postData.form.xxy + '-01-01T' + lineData[ j ].slice(0,2) + ':' + lineData[ j ].slice(2) + ':00'
                     });
                 }
             });
