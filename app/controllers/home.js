@@ -1,4 +1,4 @@
-var astrology = require('../../modules/astrology');
+var sunservice = require('../../modules/sunservice');
 
 exports.index = function(req, res){
     res.render('home/index', {
@@ -14,7 +14,7 @@ exports.getData = function(req, res){
         city    : req.body.city || null
     };
 
-    astrology( options, function ( err, data ) {
+    sunservice( options, function ( err, data ) {
 
         if ( err ) { throw new Error(err); }
 
