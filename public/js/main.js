@@ -14,7 +14,7 @@ define( function ( require ) {
   //
   // Default chart
   // -----------------------------------------    
-  $.post('/getastrologydata', defaultChartOptions , function ( data ) {
+  $.post('/getsundata', defaultChartOptions , function ( data ) {
 
     var options = {
       width: 1000,
@@ -51,7 +51,7 @@ define( function ( require ) {
       chartOptions = defaultChartOptions;
     }
 
-    $.post('/getastrologydata', chartOptions , function ( data ) {
+    $.post('/getsundata', chartOptions , function ( data ) {
 
       var options = {
         width: 1000,
@@ -88,7 +88,7 @@ define( function ( require ) {
       chartOptions = defaultChartOptions;
     }
 
-    $.post('/getastrologydata', chartOptions , function ( data ) {
+    $.post('/getsundata', chartOptions , function ( data ) {
 
       var options = {
         width: 1000,

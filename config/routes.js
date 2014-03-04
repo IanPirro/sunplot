@@ -3,6 +3,6 @@ module.exports = function( app ){
 	//home route
 	var home = require( '../app/controllers/home' );
     app.get( '/', home.index );
-	app.post( '/getastrologydata', home.getData );
+	app.post( '/getsundata', home.getData );
 
 };
